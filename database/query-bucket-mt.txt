@@ -9,4 +9,4 @@ Top 10 Death by State%;%SELECT "state", Sum("deathIncrease") AS "deathIncrease" 
 (States Daily) MT, Date vs Positive Increase%;%SELECT "date", "positiveIncrease" FROM "states_daily_historical" WHERE "state" LIKE '%MT%' ORDER BY "date" ASC%;%false%;%-3342337%;%null
 (States Daily) MT, Date vs Hospitalized Increase%;%SELECT "date", "hospitalizedIncrease" FROM "states_daily_historical" WHERE "state" LIKE '%MT%' ORDER BY "date" ASC%;%false%;%-3342337%;%null
 (States Daily) MT, Date vs Death Increase%;%SELECT "date", "deathIncrease" FROM "states_daily_historical" WHERE "state" LIKE '%MT%' ORDER BY "date" ASC%;%false%;%-3342337%;%null
-Bottom 10 Death by State%;%SELECT "state", "death", Sum("deathIncrease") AS "deathIncrease" FROM "states_daily_historical" WHERE "deathIncrease" > 0 GROUP BY "state" ORDER BY "deathIncrease" ASC LIMIT 10 OFFSET 0%;%true%;%-3342337%;%null
+Bottom 10 Death by State%;%SELECT "state", Sum("deathIncrease") AS "deathIncrease" FROM "states_daily_historical" WHERE "deathIncrease" > 0 GROUP BY "state" ORDER BY "deathIncrease" ASC LIMIT 10 OFFSET 0%;%true%;%-3342337%;%null
