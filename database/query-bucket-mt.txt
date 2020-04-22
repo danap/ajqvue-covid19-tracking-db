@@ -11,3 +11,4 @@ Top 10 Death by State%;%SELECT "state", Sum("deathIncrease") AS "deathIncrease" 
 (States Daily) MT, Date vs Death Increase%;%SELECT "date", "deathIncrease" FROM "states_daily_historical" WHERE "state" LIKE '%MT%' ORDER BY "date" ASC%;%false%;%-3342337%;%null
 Bottom 10 Death by State%;%SELECT "state", Sum("deathIncrease") AS "deathIncrease" FROM "states_daily_historical" WHERE "deathIncrease" > 0 GROUP BY "state" ORDER BY "deathIncrease" ASC LIMIT 10 OFFSET 0%;%true%;%-13312%;%null
 (States Daily) State vs Deaths > 0, Ascending 35%;%SELECT "state", Sum("deathIncrease") AS "deathIncrease" FROM "states_daily_historical" WHERE "deathIncrease" > 0 GROUP BY "state" ORDER BY "deathIncrease" ASC LIMIT 35 OFFSET 0%;%true%;%-13159%;%null
+(States Daily) State vs DeathIncrease, Current Date, > 10%;%SELECT "state", "deathIncrease" FROM "states_daily_historical" WHERE "date" LIKE '20200421' AND "deathIncrease" > 10 ORDER BY "state" ASC%;%false%;%-3355648%;%null
