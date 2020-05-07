@@ -2,8 +2,8 @@
    
    The Ajqvue COVID-19 tracking database is a SQLite file database containing
    the raw data from the Github COVID19Tracking project from the US and States
-   daily CSV files. The only difference should be the removal of the 'hash'
-   field.
+   daily CSV files. The only difference should be the removal of the detailed
+   hospital and 'hash' fields.
    
    The database will be updated each day if possible to correlate to the current
    raw data from the COVID19Tracking project.
