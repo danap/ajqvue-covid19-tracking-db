@@ -7,16 +7,16 @@ CREATE TABLE states_daily_historical (
    negative INTEGER,
    pending INTEGER,
    hospitalizedCurrently INTEGER,
-   dateChecked DATETIME,
    death INTEGER,
    hospitalized INTEGER,
+   dateChecked DATETIME,
+   fips INTEGER,
+   positiveIncrease INTEGER,
+   negativeIncrease INTEGER,
    total INTEGER,
    totalTestResults INTEGER,
+   totalTestResultsIncrease INTEGER,
    posNeg INTEGER,
-   fips INTEGER,
    deathIncrease INTEGER,
-   hospitalizedIncrease INTEGER,
-   negativeIncrease INTEGER,
-   positiveIncrease INTEGER,
-   totalTestResultsIncrease INTEGER
+   hospitalizedIncrease INTEGER
 );

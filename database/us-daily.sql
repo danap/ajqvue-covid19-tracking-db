@@ -13,7 +13,6 @@ CREATE TABLE us_daily_historical (
    total INTEGER,
    totalTestResults INTEGER,
    posNeg INTEGER,
-   fips INTEGER,
    deathIncrease INTEGER,
    hospitalizedIncrease INTEGER,
    negativeIncrease INTEGER,
