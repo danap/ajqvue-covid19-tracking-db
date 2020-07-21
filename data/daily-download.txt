@@ -1,2 +1,2 @@
-http://covidtracking.com/api/states/daily.csv
+https://covidtracking.com/api/states/daily.csv
 https://covidtracking.com/api/us/daily.csv
