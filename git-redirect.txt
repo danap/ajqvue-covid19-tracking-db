@@ -1,0 +1,3 @@
+git pull
+wget -O data/states-daily.csv https://api.covidtracking.com/v1/states/daily.csv
+wget -O data/us-daily.csv https://api.covidtracking.com/v1/us/daily.csv
